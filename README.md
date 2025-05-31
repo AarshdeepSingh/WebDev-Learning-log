@@ -6,7 +6,7 @@ The goal is to apply what I learn by building real, working apps — without rel
 
 ## 📂 Projects
 
-- 🔁 [Palindrome Checker](./palindrome%20Checker)
+- 🔁 [Palindrome Checker](./Palindrome%20Checker)
 - 📋 [Form Validator](./form-validator) (Coming soon)
 
 ## 🔍 Why This Exists
