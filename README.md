@@ -7,7 +7,7 @@ The goal is to apply what I learn by building real, working apps — without rel
 ## 📂 Projects
 
 - 🔁 [Palindrome Checker](./Palindrome%20Checker)
-- 📋 [Form Validator](./form-validator) (Coming soon)
+- 📋 [Creature Stats Searcher](./Creature%20Stats%20Searcher)
 
 ## 🔍 Why This Exists
 
