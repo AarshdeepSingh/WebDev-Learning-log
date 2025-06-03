@@ -8,7 +8,7 @@ The goal is to apply what I learn by building real, working apps — without rel
 
 - 🔁 [Palindrome Checker](./Palindrome%20Checker)
 - 📋 [Creature Stats Searcher](./Creature%20Stats%20Searcher)
-- 📅 .[To-Do List App](./To-Do%20List%20App)
+- 📅 [To-Do List App](./To-Do%20List%20App)
 ## 🔍 Why This Exists
 
 I created this log to:
