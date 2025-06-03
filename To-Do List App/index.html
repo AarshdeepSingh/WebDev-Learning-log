@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main-container hidden">
+  <h1>To-Do App</h1>
+  <p>Keep Track of your tasks!</p>
+  <button id="add-task-btn">Add New Task</button>
+  <div id="task-container"></div>
+</div>
+
+<div class="add-task-container hidden">
+<form>
+    <h1>Add your task</h1>
+    
+    <label for="task-name">Task Name: </label>
+    <input id="task-name" type="text" placeholder="Enter Task Name" required/>
+    
+    <label for="task-due-date">Due Date: </label>
+    <input id="task-due-date" type="date" placeholder="Enter Task Name" required/>
+    
+    <label for="task-description">Description: </label>
+    <textarea id="task-description" type="text" placeholder="Enter Task Name"></textarea>
+  
+  <div class="form-actions">
+    <button id="confirm-task-btn" type="submit">Confirm</button>
+    <button id="cancel-task-btn">Cancel</button>
+  </div>
+  
+</form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

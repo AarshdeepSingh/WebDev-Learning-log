@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  background: linear-gradient(145deg, #ffeaa7, #fab1a0);
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+.main-container,
+.add-task-container {
+  background: #fff6e0;
+  border: 4px dashed #fd79a8;
+  border-radius: 25px;
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 40px;
+  box-shadow: 10px 10px 0px #d63031;
+  transition: all 0.3s ease-in-out;
+  animation: popIn 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #e84393;
+  text-shadow: 2px 2px #ffeaa7;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #636e72;
+}
+
+button {
+  background: #fd79a8;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 3px 0 #d63031;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 5px 5px 0 #d63031;
+}
+
+/* Structured Form Layout */
+.add-task-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  font-size: 1rem;
+  color: #e84393;
+  margin-bottom: 4px;
+  font-family: 'Fredoka One', cursive;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #fab1a0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem;
+  background: #fff;
+  color: #2d3436;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Button Group */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+#task-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Cartoonish Task Cards */
+.task-card {
+  background: #ffeaa7;
+  border: 4px dashed #fd79a8;
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 0 #d63031;
+  animation: bounceCard 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+  box-shadow: 7px 7px 0 #d63031;
+}
+
+.task-card::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at center, #fd79a8 0%, #fd79a800 80%);
+  top: -20px;
+  right: -20px;
+  transform: rotate(25deg);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.task-card span {
+  display: block;
+  font-size: 1.1rem;
+  /* text-align: left; */
+  color: #2d3436;
+  margin-bottom: 8px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: -5%;
+  right: 8px;
+  background: #d63031;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  box-shadow: none;
+  color: white;
+}
+
+
+@keyframes bounceCard {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
